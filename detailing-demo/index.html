@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Fox Shine is a fictional car detailing website concept. Explore a sample service menu and a generated before/after comparison; no services or bookings are offered.">
+  <title>Fox Shine — Fictional car detailing concept</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./demo.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="disclosure">Fictional concept · Fox Shine offers no real detailing, prices, or bookings.</div>
+
+  <header class="hero-nav" id="top">
+    <details class="site-menu">
+      <summary aria-label="Open menu"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 7h26M3 16h26M3 25h26"/></svg></summary>
+      <nav class="pill-nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#preview">The reveal</a>
+        <a href="#payments">Payments</a>
+        <a href="#contact">Contact</a>
+        <a href="../index.html#work">Portfolio</a>
+      </nav>
+    </details>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner wrap">
+        <p class="eyebrow">Fox Shine · Car detailing concept</p>
+        <h1 id="hero-title">A little care.<br><em>A clearer ride.</em></h1>
+        <div class="hero-figure">
+          <div class="hero-aside">
+            <div class="review-stat">
+              <span class="review-stars" aria-hidden="true">★★★★★</span>
+              <span class="review-count">Over 200 satisfied customers</span>
+            </div>
+            <div class="review-quote">
+              <p>“He did such a great job on my car.”</p>
+              <span class="review-author">— Dana R. · Portland</span>
+            </div>
+            <div class="review-quote">
+              <p>“My car has never looked this clean.”</p>
+              <span class="review-author">— Marcus T. · Beaverton</span>
+            </div>
+          </div>
+          <div class="hero-stage" id="patina-stage" role="button" tabindex="0" aria-label="Open or close the car preview" aria-pressed="false">
+            <video class="hero-video" id="patina-video" muted playsinline preload="none" poster="./assets/patina-hero-poster.webp" src="./assets/patina-hero.mp4" aria-hidden="true" tabindex="-1"></video>
+            <img class="hero-static" src="./assets/patina-hero-open.webp" alt="A car with its hood raised and door open, overgrown with flowers." loading="eager">
+          </div>
+          <div class="hero-aside">
+            <div class="award" aria-label="Voted Best Detailer in the Northwest, 2026">
+              <img class="award-seal" src="assets/award-laurel.svg" alt="" aria-hidden="true">
+              <div class="award-text">
+                <span class="award-year">2026</span>
+                <span class="award-title">Best Detailer<br><span>Northwest</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="services-inner wrap">
+        <div class="services-head">
+          <p class="eyebrow">Services</p>
+          <h2 id="services-title">The kind of care<br><em>that fits.</em></h2>
+          
+        </div>
+        <div class="services-layout">
+          <ul class="service-list" role="list">
+            <li class="service-item is-active">
+              <button type="button" class="service-btn" data-service="polish" aria-pressed="true">
+                <span class="service-num" aria-hidden="true">01</span>
+                <span class="service-name">Full Exterior Polish</span>
+                <span class="service-price">from $180</span>
+                <span class="service-pills"><span class="pill">Paint Correction</span><span class="pill">3–4 hrs</span></span>
+                <span class="service-desc">Single-stage machine polish to lift haze and restore the original lacquer gloss.</span>
+              </button>
+            </li>
+            <li class="service-item">
+              <button type="button" class="service-btn" data-service="correction" aria-pressed="false">
+                <span class="service-num" aria-hidden="true">02</span>
+                <span class="service-name">Paint Correction &amp; Restore</span>
+                <span class="service-price">from $420</span>
+                <span class="service-pills"><span class="pill">Paint Correction</span><span class="pill">6–8 hrs</span></span>
+                <span class="service-desc">Multi-stage correction to remove swirls, oxidation and light defects for a deeper finish.</span>
+              </button>
+            </li>
+            <li class="service-item">
+              <button type="button" class="service-btn" data-service="ceramic" aria-pressed="false">
+                <span class="service-num" aria-hidden="true">03</span>
+                <span class="service-name">Ceramic Coating</span>
+                <span class="service-price">from $520</span>
+                <span class="service-pills"><span class="pill">Paint Protection</span><span class="pill">4–5 hrs</span></span>
+                <span class="service-desc">A durable hydrophobic layer that protects the clear coat and keeps water beading.</span>
+              </button>
+            </li>
+            <li class="service-item">
+              <button type="button" class="service-btn" data-service="interior" aria-pressed="false">
+                <span class="service-num" aria-hidden="true">04</span>
+                <span class="service-name">Deep Interior Detailing</span>
+                <span class="service-price">from $240</span>
+                <span class="service-pills"><span class="pill">Cabin Restoration</span><span class="pill">4–6 hrs</span></span>
+                <span class="service-desc">Every seam, vent and surface steamed, extracted and dressed by hand.</span>
+              </button>
+            </li>
+            <li class="service-item">
+              <button type="button" class="service-btn" data-service="wheel" aria-pressed="false">
+                <span class="service-num" aria-hidden="true">05</span>
+                <span class="service-name">Wheel &amp; Tire Care</span>
+                <span class="service-price">from $90</span>
+                <span class="service-pills"><span class="pill">Exterior</span><span class="pill">1–2 hrs</span></span>
+                <span class="service-desc">Decontamination, dressing and protection for wheels, tires and arches.</span>
+              </button>
+            </li>
+            <li class="service-item">
+              <button type="button" class="service-btn" data-service="wash" aria-pressed="false">
+                <span class="service-num" aria-hidden="true">06</span>
+                <span class="service-name">Foam Wash</span>
+                <span class="service-price">from $60</span>
+                <span class="service-pills"><span class="pill">Exterior</span><span class="pill">1 hr</span></span>
+                <span class="service-desc">A safe two-bucket hand wash with pH-neutral foam and a gentle dry.</span>
+              </button>
+            </li>
+          </ul>
+          <div class="service-media" aria-live="polite" aria-label="Preview for Full Exterior Polish">
+            <figure class="service-fig is-active" data-media="polish">
+              <img src="./assets/service-polish.jpeg" alt="" aria-hidden="true" loading="lazy">
+              <figcaption><span>01 / 06</span><span>Paint Correction</span></figcaption>
+            </figure>
+            <figure class="service-fig" data-media="correction">
+              <img src="./assets/service-correction.jpeg" alt="" aria-hidden="true" loading="lazy">
+              <figcaption><span>02 / 06</span><span>Paint Correction</span></figcaption>
+            </figure>
+            <figure class="service-fig" data-media="ceramic">
+              <img src="./assets/service-ceramic.jpeg" alt="" aria-hidden="true" loading="lazy">
+              <figcaption><span>03 / 06</span><span>Paint Protection</span></figcaption>
+            </figure>
+            <figure class="service-fig" data-media="interior">
+              <img src="./assets/service-interior.jpeg" alt="" aria-hidden="true" loading="lazy">
+              <figcaption><span>04 / 06</span><span>Cabin Restoration</span></figcaption>
+            </figure>
+            <figure class="service-fig" data-media="wheel">
+              <img src="./assets/service-wheel.jpeg" alt="" aria-hidden="true" loading="lazy">
+              <figcaption><span>05 / 06</span><span>Exterior</span></figcaption>
+            </figure>
+            <figure class="service-fig" data-media="wash">
+              <img src="./assets/service-wash.jpeg" alt="" aria-hidden="true" loading="lazy">
+              <figcaption><span>06 / 06</span><span>Exterior</span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <p class="section-note">Sample menu — prices and timings are illustrative for this concept.</p>
+      </div>
+    </section>
+
+    <section class="preview-section section-pad" id="preview" aria-labelledby="preview-title"><div class="wrap preview-layout"><div class="preview-copy"><p class="eyebrow">02 / A visual explanation</p><h2 id="preview-title">Move the line.<br><em>See the idea.</em></h2><p>Drag the slider or use your arrow keys to compare a generated before-and-after treatment of the same vehicle.</p><label for="reveal-range">Reveal position</label><input id="reveal-range" type="range" min="0" max="100" value="50" aria-describedby="reveal-help reveal-value"><div class="range-meta"><span>Before</span><output id="reveal-value" for="reveal-range">50% after</output><span>After</span></div><p id="reveal-help" class="hint">Use the arrow keys to adjust the comparison.</p></div>
+      <figure class="comparison-scene" id="comparison-scene" style="--split:50%"><div class="scene-layer before"><img src="./assets/detailing-car-before.webp" alt="" aria-hidden="true"><span class="scene-badge badge-before" aria-hidden="true">BEFORE / CONCEPT</span></div><div class="scene-layer after"><img src="./assets/detailing-car-after.webp" alt="" aria-hidden="true"><span class="scene-badge badge-after" aria-hidden="true">AFTER / CONCEPT</span></div><div class="scene-divider" aria-hidden="true"><span>↔</span></div></figure></div></section>
+
+    <section class="payments-section section-pad" id="payments" aria-labelledby="payments-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Payments</p>
+            <h2 id="payments-title">A checkout,<br><em>made simple.</em></h2>
+          </div>
+          <p>A Stripe-powered payment flow — shown here as a concept, with no live processing.</p>
+        </div>
+        <div class="checkout">
+          <div class="checkout-card">
+            <div class="checkout-head">
+              <span class="stripe-badge"><span class="stripe-by">Payments by</span><span class="stripe-word">stripe</span></span>
+              <span class="checkout-demo">Demo · no payment collected</span>
+            </div>
+            <div class="checkout-body">
+              <label class="field"><span>Card number</span><input value="4242 4242 4242 4242" readonly></label>
+              <div class="field-row">
+                <label class="field"><span>Expiry</span><input value="12 / 28" readonly></label>
+                <label class="field"><span>CVC</span><input value="424" readonly></label>
+              </div>
+              <label class="field"><span>Name on card</span><input value="Jane Driver" readonly></label>
+            </div>
+            <div class="checkout-foot">
+              <span class="checkout-total">Total · $180.00</span>
+              <button type="button" class="pay-button" disabled>Pay $180.00</button>
+            </div>
+            <p class="checkout-note">Concept mockup — this form does not collect or process payments.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-pad" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Tell us about<br><em>your car.</em></h2>
+          </div>
+          <p>A mockup enquiry form and workshop details — shown as a concept, with no message actually sent.</p>
+        </div>
+        <div class="contact-layout">
+          <div class="contact-form" aria-label="Enquiry form (mockup)">
+            <label class="cfield"><span>Name</span><input value="Alex Morgan" readonly></label>
+            <label class="cfield"><span>Email</span><input value="alex@example.com" readonly></label>
+            <div class="cfield-row">
+              <label class="cfield"><span>Car make &amp; model</span><input value="Subaru Outback" readonly></label>
+              <label class="cfield"><span>Year</span><input value="2020" readonly></label>
+            </div>
+            <label class="cfield"><span>Service</span><input value="Ceramic Coating · from $520" readonly></label>
+            <label class="cfield"><span>Message</span><textarea readonly placeholder="Tell us about your car and what you would like it to become."></textarea></label>
+            <button class="send-button" type="button" disabled>Send message</button>
+            <p class="contact-note">Concept mockup — this form does not send a message.</p>
+          </div>
+          <div class="contact-info">
+            <div class="map-placeholder" aria-hidden="true">
+              <span class="map-label">Map · placeholder</span>
+              <span class="map-pin"></span>
+              <span class="map-street">WORKSHOP LANE</span>
+            </div>
+            <h3>Fox Shine workshop</h3>
+            <p class="address">4 Workshop Lane<br>Portland, Oregon 97201</p>
+            <p class="phone">+1 (503) 000 0000</p>
+            <dl class="hours">
+              <div><dt>Monday–Friday</dt><dd>08:00–18:00</dd></div>
+              <div><dt>Saturday</dt><dd>09:00–13:00</dd></div>
+              <div><dt>Sunday</dt><dd>Closed</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing"><div class="wrap closing-inner"><div><p class="eyebrow">Keep exploring</p><h2>Good design makes<br><em>the quote clear.</em></h2></div><div><p>The right questions make it easier to compare options and understand what comes next.</p><a class="button button-light" href="../index.html#work">View Travis's portfolio ↗</a><p class="closing-note">Concept by Travis Weber — portfolio services include websites, <a href="../index.html#services">Stripe payments &amp; AI workflows ↗</a>.</p></div></div></section>
+
+    <section class="pricing section-pad" id="pricing" aria-labelledby="pricing-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Building &amp; designing</p>
+            <h2 id="pricing-title">Websites, from<br><em>idea to launch.</em></h2>
+          </div>
+          <p>A website, built for you — by Travis Weber. Here's what a project costs.</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="price-card">
+            <h3>Website build</h3>
+            <p class="price-figure">$400</p>
+            <p class="price-note">A simple, practical website designed and built for your business.</p>
+          </div>
+          <div class="price-card">
+            <h3>Monthly maintenance</h3>
+            <p class="price-figure">$50<span class="price-per">/mo</span></p>
+            <p class="price-note">Ongoing updates and care to keep your site current.</p>
+          </div>
+        </div>
+        <p class="pricing-note">Starting prices — scope and specifics are agreed before work begins. <a href="../index.html#about">More about Travis ↗</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap"><span>FOX SHINE <small>CARE IN EVERY DETAIL</small></span><p>A clear path from comparison to a better question.</p><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>

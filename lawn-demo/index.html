@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Northwest Lawn Care is a fictional lawn care website concept by Travis Weber. No services, quotes, or bookings are offered.">
+  <title>Northwest Lawn Care — Fictional website concept</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./demo.js" defer></script>
+</head>
+<body class="demo-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="demo-disclosure">Fictional website concept · Northwest Lawn Care offers no real services, estimates, or bookings.</div>
+
+  <header class="nl-header shell" id="home">
+    <a class="nl-logo" href="#home" aria-label="Northwest Lawn Care home">
+      <span class="nl-logo-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20c-2-6-4-9-8-11 4-1 6-4 8-7 2 3 4 6 8 7-4 2-6 5-8 11Z" fill="currentColor"/></svg></span>
+      <span class="nl-logo-name">NORTHWEST</span><span class="nl-logo-sub"><i></i>LAWN CARE<i></i></span>
+    </a>
+    <details class="nl-menu"><summary aria-label="Open menu"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 7h26M3 16h26M3 25h26"/></svg></summary><nav aria-label="Main menu"><a href="#services">Services</a><a href="#method">Approach</a><a href="#gallery">Gallery</a><a href="#booking">Book</a><a href="#seasonal">Seasonal guide</a><a href="../index.html#work">Travis's portfolio</a></nav></details>
+    <div class="nl-location"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-7.2 8-13a8 8 0 1 0-16 0c0 5.8 8 13 8 13Z" fill="currentColor"/><circle cx="12" cy="9" r="2.5" fill="#f2f8ee"/></svg><span>St. Helens, OR<small>design inspiration</small></span></div>
+  </header>
+
+  <main id="main">
+    <section class="nl-hero" aria-labelledby="demo-title">
+      <img class="nl-hero-img" src="./assets/lawn-hero.webp" alt="" aria-hidden="true" decoding="async">
+      <div class="nl-hero-scrim" aria-hidden="true"></div>
+      <div class="nl-hero-inner shell">
+        <p class="nl-kicker">Clean lawns. Happier days.</p>
+        <h1 id="demo-title">Lawn Care,<br>Made Clear</h1>
+        <p class="nl-subtitle">Mowing, edging, and cleanups to keep your property looking its best.</p>
+        <div class="nl-actions">
+          <a class="nl-cta nl-cta-primary" href="#quote-sample"><span>Explore an estimate</span><b aria-hidden="true">›</b></a>
+          <a class="nl-cta nl-cta-secondary" href="#schedule-sample"><span>Explore dates</span><b aria-hidden="true">›</b></a>
+        </div>
+        <div class="nl-features" aria-label="Service categories">
+          <a href="#services">Lawn Mowing</a>
+          <a href="#services">Edging &amp; Trimming</a>
+          <a href="#services">Yard Cleanups</a>
+          <a href="#method">Residential &amp; Small Commercial</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="nl-samples shell" aria-label="Interactive planning tools">
+      <article id="quote-sample" class="sample-tool" tabindex="-1" aria-labelledby="quote-title">
+        <p class="eyebrow">01 / Estimate</p><h2 id="quote-title">Explore an estimate</h2>
+        <p>Adjust the yard size and areas to see an illustrative one-visit range.</p>
+        <fieldset class="sample-choices"><legend>Areas to include</legend><label><input id="front-yard" type="checkbox" checked> Front yard</label><label><input id="back-yard" type="checkbox"> Back yard</label></fieldset>
+        <label class="sample-check"><input id="pets-yard" type="checkbox"> Dogs or other pets in the yard</label>
+        <label class="sample-slider-label" for="yard-area">Total area to mow: <output id="yard-area-value" for="yard-area">2,500 sq ft</output></label>
+        <input id="yard-area" class="sample-slider" type="range" min="500" max="10000" step="100" value="2500" aria-describedby="area-hint">
+        <p id="area-hint" class="sample-hint">Combined area for the selected yard sections; drag or use arrow keys.</p>
+        <div class="sample-result" role="status" aria-live="polite"><span>Illustrative one-visit range</span><strong id="quote-result"></strong><small id="quote-detail"></small></div>
+        <p class="sample-fineprint">Illustrative math: $35 base + $0.018 per sq ft, plus $12 for backyard access and $8 for pets when selected; ±20%, rounded to $5. Excludes taxes, travel, condition, frequency and site review. Not a price offer.</p>
+        <div class="stripe-demo" aria-label="Sample Stripe checkout (mock)">
+          <div class="stripe-demo-card">
+            <div class="stripe-demo-head">
+              <span class="stripe-demo-by">Payments by</span><span class="stripe-demo-word">stripe</span>
+              <span class="stripe-demo-tag">Demo</span>
+            </div>
+            <div class="stripe-demo-amount">$180.00 <span>USD</span></div>
+            <div class="stripe-demo-row"><span>Card</span><strong>•••• •••• •••• 4242</strong></div>
+            <div class="stripe-demo-row"><span>Expiry</span><strong>12 / 28</strong></div>
+            <button class="stripe-demo-pay" type="button" disabled>Pay $180.00</button>
+            <p class="stripe-demo-note">Concept mockup — no payment is collected or processed.</p>
+          </div>
+        </div>
+      </article>
+      <article id="schedule-sample" class="sample-tool" tabindex="-1" aria-labelledby="schedule-title">
+        <p class="eyebrow">02 / Dates</p><h2 id="schedule-title">Explore dates</h2>
+        <p>Choose a date and time preference. Availability is not checked, and no reservation is made.</p>
+        <div class="sample-calendar" aria-label="Date preference picker">
+          <div class="calendar-heading"><button type="button" id="prev-month" aria-label="Previous month">‹</button><h3 id="calendar-month" tabindex="-1" aria-live="polite"></h3><button type="button" id="next-month" aria-label="Next month">›</button></div>
+          <div class="calendar-weekdays" aria-hidden="true"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div>
+          <div class="calendar-days" id="calendar-days" role="group" aria-label="Choose a date from today onward" aria-describedby="calendar-help"></div>
+        </div>
+        <p id="calendar-help" class="sample-hint">Tab to the calendar, use arrow keys to explore dates, and press Enter or Space to select.</p>
+        <div class="sample-times" role="group" aria-label="Time of day preference"><button type="button" data-time="Morning" aria-pressed="false">Morning</button><button type="button" data-time="Afternoon" aria-pressed="false">Afternoon</button><button type="button" data-time="Flexible" aria-pressed="true">Flexible</button></div>
+        <output id="date-preference" class="sample-preference" aria-live="polite">Select a date from today onward to explore a preference.</output>
+        <button type="button" class="sample-clear" id="clear-date">Clear preference</button>
+      </article>
+      <article id="booking" class="sample-tool booking-tool" tabindex="-1" aria-labelledby="booking-title">
+        <p class="eyebrow">03 / Request</p><h2 id="booking-title">Request a visit</h2>
+        <p>Pick a date on the calendar, add your details, and preview the request email. Concept mockup — nothing is sent.</p>
+        <output id="bk-date-summary" class="booking-date-summary">No date selected — choose one on the calendar.</output>
+        <label class="cfield"><span>Your name</span><input id="bk-name" type="text" autocomplete="name" placeholder="Alex Morgan"></label>
+        <label class="cfield"><span>Email</span><input id="bk-email" type="email" autocomplete="email" placeholder="alex@example.com"></label>
+        <label class="cfield"><span>Message (optional)</span><textarea id="bk-message" rows="3" placeholder="Tell us a little about your yard..."></textarea></label>
+        <button type="button" class="bk-send" id="bk-send" disabled>Send request</button>
+        <div class="bk-confirm" id="bk-confirm" hidden></div>
+      </article>
+    </section>
+
+    <section class="gallery-section shell" id="gallery" aria-labelledby="gallery-title">
+      <div class="demo-section-head">
+        <p class="eyebrow">04 / Gallery</p>
+        <h2 id="gallery-title">The work,<br><em>in pictures.</em></h2>
+        <p>A look at the landscaping services and spaces. Illustrative generated imagery, not customer results.</p>
+      </div>
+      <figure class="gallery-collage">
+        <img src="./assets/gallery-collage.webp" alt="A collage of landscaping services: front lawn and borders, backyard and patio, garden paths, planting beds, outdoor spaces, and shrubs and mulch" loading="lazy">
+      </figure>
+    </section>
+
+    <section class="transform-section shell" id="transform" aria-labelledby="transform-title">
+      <div class="demo-section-head">
+        <p class="eyebrow">05 / Before &amp; after</p>
+        <h2 id="transform-title">The difference<br><em>good care makes.</em></h2>
+        <p>One property, before and after a cleanup. Illustrative generated imagery, not customer results.</p>
+      </div>
+      <figure class="transform-fig">
+        <img src="./assets/before-after.webp" alt="A before-and-after comparison of a front yard: overgrown before, then the same yard cleared with a neat lawn and trimmed planting beds" loading="lazy">
+        <figcaption>Overgrown before, cleared and manicured after.</figcaption>
+      </figure>
+    </section>
+
+    <section class="demo-intro" aria-label="Approach overview"><div class="shell intro-row"><p>Care for the place<br><em>you come home to.</em></p><span>Good lawn care starts with the shape of the space: access, growth, and the rhythm of the seasons.</span></div></section>
+
+    <section class="services-section shell" id="services" aria-labelledby="services-title">
+      <div class="demo-section-head"><p class="eyebrow">06 / Explore the work</p><h2 id="services-title">What could fit<br><em>your yard?</em></h2><p>Every landscape asks for a different rhythm. Start with the work, then consider the limits and timing.</p></div>
+      <div class="service-list">
+        <article class="service-row"><span class="service-index">01</span><div><h3>Routine lawn care</h3><p>Mowing and edging help keep an established lawn tidy. Access, terrain, and growth rate shape the right schedule.</p></div><span class="service-mark" aria-hidden="true">↗</span></article>
+        <article class="service-row"><span class="service-index">02</span><div><h3>Seasonal reset</h3><p>Cleanup around changing seasons can include debris removal and attention to overgrown edges. The right scope depends on the condition of the space.</p></div><span class="service-mark" aria-hidden="true">↗</span></article>
+        <article class="service-row"><span class="service-index">03</span><div><h3>Garden edges</h3><p>Defined borders can make beds easier to maintain and lawns simpler to navigate. Plant care and installation call for separate expertise.</p></div><span class="service-mark" aria-hidden="true">↗</span></article>
+      </div>
+    </section>
+
+    <section class="method-section" id="method" aria-labelledby="method-title"><div class="shell method-grid"><div><p class="eyebrow">07 / The approach</p><h2 id="method-title">Start with<br><em>the ground truth.</em></h2></div><div class="method-steps"><div><span>01 / Understand</span><p>Identify the yard's size, access, current condition, and the kind of upkeep the owner wants.</p></div><div><span>02 / Set the scope</span><p>Separate regular maintenance from one-time work, then clarify what is outside the plan.</p></div><div><span>03 / Revisit</span><p>Adjust the plan as weather and growth change through the year.</p></div></div></div></section>
+
+    <section class="seasonal-section shell" id="seasonal" aria-labelledby="seasonal-title"><div class="seasonal-label"><p class="eyebrow">08 / Seasonal guide</p><span class="seasonal-sun" aria-hidden="true"></span></div><div><h2 id="seasonal-title">Good care follows<br><em>the season.</em></h2><p>Local conditions and the specific property shape the schedule. Use these seasonal prompts as a starting point.</p><div class="seasonal-notes"><div><span>Spring</span><p>Assess winter wear and plan the first tidy-up.</p></div><div><span>Summer</span><p>Watch growth and adapt the maintenance rhythm.</p></div><div><span>Autumn</span><p>Clear fallen material and prepare for slower growth.</p></div></div></div></section>
+
+    <section class="demo-close" id="contact-sample" aria-labelledby="close-title"><div class="shell close-grid"><div><p class="eyebrow">Keep exploring</p><h2 id="close-title">A simpler<br><em>way to decide.</em></h2></div><div><p>Clear scope, useful context, and a thoughtful first step can make any service conversation easier.</p><a class="button button-cream" href="../index.html#work">View Travis's portfolio <span aria-hidden="true">↗</span></a><p class="demo-note">Concept by Travis Weber — portfolio services include websites, <a href="../index.html#services">Stripe payments &amp; AI workflows ↗</a>.</p></div></div></section>
+  </main>
+
+  <footer class="demo-footer shell"><span>NORTHWEST LAWN CARE <small>LANDSCAPE &amp; SEASONAL CARE</small></span><p>Thoughtful service starts with a clear plan for the space.</p><a href="#main">Back to top ↑</a></footer>
+  <nav class="nl-bottom-nav" aria-label="Quick navigation"><a class="active" href="#home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 15 16 4l13 11M7 13v16h18V13M13 29V19h6v10"/></svg><span>Home</span></a><a href="#quote-sample"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 3h13l6 6v20H7zM20 3v7h6M11 16h11M11 21h11"/></svg><span>Estimate</span></a><a href="#schedule-sample"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="7" width="24" height="22" rx="2"/><path d="M4 13h24M10 3v8M22 3v8"/></svg><span>Dates</span></a><a href="#gallery"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="5" width="26" height="22" rx="2"/><circle cx="11" cy="12" r="2"/><path d="m5 24 8-8 6 5 5-4 4 4"/></svg><span>Gallery</span></a><a href="#booking"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 4c-2 0-4 3-4 7 0 9 10 19 19 19 4 0 7-2 7-4l-7-5-4 4c-5-2-9-6-11-11l4-4z"/></svg><span>Book</span></a></nav>
+</body>
+</html>
