@@ -126,6 +126,8 @@ h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.02em;line-height:.96}
 .about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,6vw,96px)}
 .about-grid h2{font-size:clamp(36px,4.2vw,64px);line-height:1.02;text-transform:uppercase}
 .about-grid h2 em{font-style:normal;color:var(--yellow)}
+.about-mascot{margin:28px 0 0;max-width:300px}
+.about-mascot img{display:block;width:100%;height:auto;border-radius:16px;border:1px solid var(--line);box-shadow:10px 10px 0 var(--yellow)}
 .about-copy{padding-top:8px}
 .about-copy p{font-size:15px;line-height:1.65;color:var(--ink-2);max-width:500px;margin:0 0 18px}
 .email-address{color:var(--yellow);font-weight:700;border-bottom:1px solid var(--yellow);padding-bottom:2px}

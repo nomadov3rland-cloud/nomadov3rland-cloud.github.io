@@ -179,6 +179,7 @@ em{font-style:normal;color:var(--amber)}
 .send-button{justify-self:start;min-height:46px;padding:0 26px;border:0;border-radius:999px;background:var(--amber);color:#14100a;font-size:14px;font-weight:700;cursor:not-allowed;opacity:.7}
 .contact-note{font-size:11px;color:var(--muted);margin:0}
 .contact-info{display:flex;flex-direction:column;gap:16px}
+.contact-mascot{display:block;width:100%;max-width:340px;height:auto;border-radius:8px;border:1px solid var(--line)}
 .map-placeholder{position:relative;aspect-ratio:16/10;background:#101216;border:1px solid var(--line);border-radius:8px;overflow:hidden;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:30px 30px}
 .map-pin{position:absolute;left:56%;top:40%;width:13px;height:13px;border-radius:50%;background:#c47f7c;box-shadow:0 0 0 5px rgba(196,127,124,.22)}
 .map-street{position:absolute;left:56%;top:54%;transform:translateX(-50%);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#c47f7c;white-space:nowrap}

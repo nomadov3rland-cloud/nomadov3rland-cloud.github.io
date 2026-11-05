@@ -60,6 +60,8 @@ h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.02em;line-height:.98}
 .nl-samples{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;padding:52px 0 12px}
 .sample-tool{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:26px;scroll-margin-top:96px}
 .sample-tool h2{font-size:26px;margin-bottom:8px}
+.tool-head{display:flex;gap:18px;align-items:flex-start;justify-content:space-between}
+.tool-mascot{width:112px;height:112px;object-fit:cover;border-radius:10px;flex:none;border:1px solid var(--line)}
 .sample-tool>p{color:var(--muted);font-size:14px;line-height:1.55;margin:0 0 18px}
 .sample-choices{border:0;padding:0;margin:0 0 14px}
 .sample-choices legend{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:10px}
