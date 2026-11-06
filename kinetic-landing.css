@@ -279,7 +279,7 @@ html.no-motion .scroll-line::after{animation:none}
 }
 @media(max-width:600px){
   .help-section,.projects-section,.skills-section,.process-section{padding:48px 14px}
-  .help-section h2,.projects-head h2,.skills-head h2,.process-head h2,.cta-section h2{font-size:clamp(30px,9vw,42px)}
+  .work-head h2,.help-section h2,.projects-head h2,.skills-head h2,.process-head h2,.cta-section h2{font-size:clamp(30px,9vw,42px)}
   .help-grid,.project-grid,.skills-grid{grid-template-columns:1fr}
   .process-list{grid-template-columns:1fr;gap:0}
   .process-step{padding:18px 0}
